@@ -1,143 +1,188 @@
+
+
+
+
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>葉湘荷 履歴書</title>
-    <style>
-        body {
-            font-family: "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: #fff;
-            padding: 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
-        h1 {
-            font-size: 28px;
-        }
-        h2 {
-            margin-top: 30px;
-            font-size: 20px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .highlight {
-            font-weight: bold;
-            color: #2c3e50;
-        }
-        .small {
-            color: #777;
-            font-size: 14px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>葉湘荷｜履歷</title>
+
+<style>
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.link-btn {
+    font-size: 14px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* ⚠️ TODO: 把下面 href 換成你的日文履歷連結 */
+.link-btn::after {
+    content: "Japanese ver";
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+    margin-top: 0;
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+}
+
+.highlight {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.tag {
+    display: inline-block;
+    background: #eef3ff;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.small {
+    color: #666;
+    font-size: 14px;
+}
+</style>
+
 </head>
+
 <body>
+
 <div class="container">
 
-    <h1>葉湘荷（Cheyenne Yeh）</h1>
+    <!-- Header -->
+    <div class="header">
+        <div class="name">葉湘荷 Cheyenne Yeh</div>
+        <a href="https://b06107014.github.io/Resume/jp.html" class="link-btn">🔗</a>
+        <!-- TODO: 將 # 改成你的日文履歷網址 -->
+    </div>
 
-    <div class="section">
-        <h2>職務概要</h2>
+    <!-- 專業摘要 -->
+    <div class="card">
+        <h2>專業簡介</h2>
         <ul>
-            <li>教育研修および人材開発分野で2年以上の経験</li>
-            <li>研修企画〜効果測定まで一貫対応可能</li>
-            <li>Power BI・FineReportを用いたデータ分析・業務改善</li>
-            <li>JLPT N1、日本側窓口・通訳対応可能</li>
-            <li>研修評価を <span class="highlight">69点 → 75点</span> に改善</li>
-            <li>個人情報リスクを特定し法的リスクを回避</li>
+            <li>2年以上教育訓練與人才發展經驗</li>
+            <li>擅長數據分析（Power BI / FineReport）與流程優化</li>
+            <li>日文N1，可擔任日方窗口與口譯</li>
+            <li>訓練成效提升：<span class="highlight">69 → 75</span></li>
+            <li>報表效率提升：<span class="highlight">60分鐘 → 10分鐘（-83%）</span></li>
         </ul>
     </div>
 
-    <div class="section">
-        <h2>学歴</h2>
-        <p>2017年9月 ～ 2022年6月<br>
-        国立台湾大学 日本語文学科（中国文学副専攻）</p>
-    </div>
+    <!-- 工作經歷 -->
+    <div class="card">
+        <h2>工作經歷</h2>
 
-    <div class="section">
-        <h2>職務経歴</h2>
+        <p><strong>台灣普利司通股份有限公司</strong>（2023/04～至今）</p>
+        <p class="small">培訓企劃員｜汽車製造業</p>
 
-        <p class="highlight">台湾普利司通股份有限公司（2023年4月～現在）</p>
-        <p class="small">教育研修企画担当 / 自動車部品メーカー</p>
-
-        <h3>業務内容</h3>
         <ul>
-            <li>研修システムの管理・改善</li>
-            <li>評価データ分析・可視化</li>
-            <li>FineReport / Power BI 活用</li>
-            <li>SharePoint / Power Apps 管理</li>
-            <li>日中通訳・海外拠点対応</li>
+            <li>教育訓練系統優化與成效提升</li>
+            <li>跨國系統測試（泰國技術中心）</li>
+            <li>Power BI競賽第二名</li>
+            <li>中日雙語口譯與國際協作</li>
         </ul>
 
-        <h3>主な実績</h3>
+        <h3>核心成果</h3>
         <ul>
-            <li>年間12回以上の研修実施、評価改善</li>
-            <li>レポート作業時間 <span class="highlight">60分 → 10分</span></li>
-            <li>Power BI コンペ準優勝</li>
-            <li>交通費試算ツール開発（HTML + Power Apps）</li>
-            <li>人事システム導入（タイ拠点連携）</li>
-            <li>講師制度構築（5名 → 15名）</li>
+            <li>年度12場以上訓練，評價提升至75分</li>
+            <li>報表自動化，效率提升83%</li>
+            <li>開發交通費試算工具（HTML + Power Apps）</li>
+            <li>建立講師制度（5 → 15人）</li>
+            <li>發現個資風險，避免法律問題</li>
         </ul>
     </div>
 
-    <div class="section">
-        <h2>語学力</h2>
+    <!-- 技能區 -->
+    <div class="card">
+        <h2>技能專長</h2>
+
+        <div class="grid">
+            <div>
+                <h3>數據工具</h3>
+                <div class="tag">Power BI</div>
+                <div class="tag">FineReport</div>
+                <div class="tag">SQL</div>
+                <div class="tag">HTML</div>
+            </div>
+
+            <div>
+                <h3>人資與管理</h3>
+                <div class="tag">教育訓練</div>
+                <div class="tag">人才發展</div>
+                <div class="tag">KPI管理</div>
+                <div class="tag">專案管理</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 語言 -->
+    <div class="card">
+        <h2>語言能力</h2>
         <ul>
-            <li>日本語：JLPT N1</li>
-            <li>英語：TOEIC 805</li>
+            <li>日文：JLPT N1</li>
+            <li>英文：TOEIC 805</li>
         </ul>
     </div>
 
-    <div class="section">
-        <h2>スキル</h2>
-        <ul>
-            <li><strong>データ：</strong>Power BI / FineReport / SQL / HTML</li>
-            <li><strong>人事：</strong>研修企画・人材育成</li>
-            <li><strong>管理：</strong>KPI・予算管理・プロジェクト推進</li>
-            <li><strong>語学：</strong>日中通訳・国際対応</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>自己PR</h2>
+    <!-- 自我介紹 -->
+    <div class="card">
+        <h2>自我介紹</h2>
         <p>
-            台湾大学日本語文学科卒業。論理的思考（INTJ）を強みとし、
-            データ分析とコミュニケーション能力を融合した業務改善を得意としています。
+            台大日文系畢業，具備INTJ的結構化思維，擅長將數據分析與人資管理結合，
+            推動組織效率提升。
         </p>
         <p>
-            FineReportにより業務効率を83%改善し、
-            KPI・予算管理を通じて組織の意思決定を支援。
-        </p>
-        <p>
-            日本・タイとの国際連携経験を活かし、
-            グローバル環境でも価値を発揮できます。
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>ポートフォリオ</h2>
-        <p>
-            <a href="https://b06107014.github.io/fare-calculator/" target="_blank">
-                交通費試算ツールを見る
-            </a>
+            曾透過數據工具優化流程，使報表效率提升83%，並參與跨國系統導入，
+            成功預防個資風險。
         </p>
     </div>
 
 </div>
+
 </body>
-</html>
